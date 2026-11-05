@@ -595,11 +595,10 @@
     wrap.innerHTML = `
       <p class="vxm-note">Ủng hộ là tự nguyện và <strong>không mở khóa</strong> tính năng nào. Mọi phần cờ / học vẫn miễn phí.</p>
       <h3>PayPal</h3>
-      <p class="vxm-note">Nhận: vuvietnb85@gmail.com · deep link chính thức, không nhúng SDK.</p>
+      <p class="vxm-note">Ủng hộ qua PayPal (mở trang chính thức). Không cần điền email trên app.</p>
       <div class="vxm-amt"></div>
       <h3>Ko-fi</h3>
-      <p><a class="vxm-kofi" href="${KOFI}" target="_blank" rel="noopener">Ko-fi · quocvietvu</a></p>
-      <p class="vxm-note">Tiền Ko-fi vào PayPal của anh Việt theo cấu hình tài khoản Ko-fi.</p>
+      <p><a class="vxm-kofi" href="${KOFI}" target="_blank" rel="noopener">Ủng hộ trên Ko-fi</a></p>
     `;
     const amt = wrap.querySelector(".vxm-amt");
     AMOUNTS.forEach((n) => {
@@ -632,8 +631,6 @@
     close: closeSheet,
     go,
     amounts: AMOUNTS,
-    paypalBase: PAYPAL_BASE,
-    kofi: KOFI,
     radiosVn: RADIO_VN,
     radiosGlobal: RADIO_GLOBAL,
   };
